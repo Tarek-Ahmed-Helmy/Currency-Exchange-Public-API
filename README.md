@@ -3,15 +3,15 @@
 ## Setup
 
 1. **Clone the repository**
-   git clone https://github.com/Tarek-Ahmed-Helmy/Currency-Exchange-Public-API.git
+   git clone https://github.com/Tarek-Ahmed-Helmy/Currency-Exchange-Public-API.git <br>
    cd Currency-Exchange-Public-API
    
 2. **Install dependencies**
    npm install
 
 3. **Configure environment variables**
-   Create a .env file in the root directory and add the necessary environment variables. For example:
-     PORT=3000
+   Create a .env file in the root directory and add the necessary environment variables. For example: <br>
+     PORT=3000 <br>
      APY_TOKEN=your_apyhub_api_token (my_apyhub_api_token = '84516b3ea1585135975a7e4d', if u want to try with it)
 
 4. **Run the application**
