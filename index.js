@@ -1,7 +1,9 @@
 const express = require('express')
+const setupSwagger = require("./swagger");
+const rateLimit = require("express-rate-limit");
 const exchangeRoute = require('./Routes/exchangeRoute')
 require("dotenv").config();
-const rateLimit = require("express-rate-limit");
+
 
 
 const limiter = rateLimit({
@@ -18,6 +20,7 @@ const PORT = process.env.PORT || 3000
 app.use(limiter);
 app.use('/exchange-rate', exchangeRoute)
 
+setupSwagger(app);
 
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`)
